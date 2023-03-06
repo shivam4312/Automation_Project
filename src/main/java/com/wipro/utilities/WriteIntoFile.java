@@ -5,6 +5,7 @@ import java.io.IOException;
 
 public class WriteIntoFile {
 
+	//Write Data from web site into Test File
 	public static void writeData(String prodName, String prodPrize) {
 
 		FileWriter fw;

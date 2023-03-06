@@ -31,11 +31,13 @@ public class PlaceOrderPage extends TestBase{
 	
 WebDriverWait wait = new WebDriverWait(driver, 10);
 	
+	// code for select desktop
 	public boolean selectDesktop() {
 		driver.findElement(clickOnComp).click();
 		wait(2000);
 		driver.findElement(clickOnDesktop).click();
 		wait(3000);
+		//fetching product name & price and storing it in text file
 		String ProductName = driver.findElement(fetchProdName).getText();
 		String ProductPrice = driver.findElement(fetchProdPrice).getText();
 		
@@ -44,6 +46,7 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		return actResult;
 	}
 	
+	// function for adding product into cart
 	public boolean addToCart() {
 		driver.findElement(clickOnAddToCart).click();
 		wait(20000);
@@ -51,6 +54,7 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		return actResult;
 	}
 
+	// function for clicking Shopping Cart
 	public boolean clickShoppingCart() {
 		driver.findElement(clickOnShoppingCart).click();
 		wait(1000);
@@ -60,6 +64,7 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		return actResult;
 	}
 	
+	// Function for clicking checkout
 	public boolean clickCheckout() {
 		driver.findElement(checkOut).click();
 		wait(1000);
@@ -71,7 +76,7 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		return actResult;
 		
 	}
-
+	// Function for make Payment
 	public boolean makePayment() {
 		driver.findElement(By.xpath("//*[@id=\"paymentmethod_0\"]")).click();
 		driver.findElement(paymentContinue).click();
@@ -83,6 +88,7 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		
 	}
 
+	// function for click confirm
 	public boolean clickConfirm() {
 		driver.findElement(cnfBtn).click();
 		wait(1000);

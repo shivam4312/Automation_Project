@@ -12,7 +12,7 @@ public class HomePage extends TestBase{
 	By account = By.xpath("//a[@class='ico-account']");
 	By address = By.xpath("/html/body/div[6]/div[3]/div/div[1]/div/div[2]/ul/li[2]/a");
 	
-	
+	// code for clicking My Account
 	public boolean myAccountClick() {
 		
 		driver.findElement(account).click();

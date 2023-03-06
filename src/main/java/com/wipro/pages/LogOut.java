@@ -10,6 +10,7 @@ import com.wipro.base.TestBase;
 public class LogOut extends TestBase{
 	By logout = By.xpath("//a[@class='ico-logout']");
 	WebDriverWait wait = new WebDriverWait(driver,10);
+	//Code for Logout
 	public boolean logOut() {
 		wait(5000);
 		driver.findElement(logout).click();

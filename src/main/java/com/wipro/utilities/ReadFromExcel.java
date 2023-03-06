@@ -8,6 +8,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadFromExcel {
 	static XSSFWorkbook workBook;
+	
+	//Function for getting data from Login.xlsx file 
 	public static String[][] getData() {
 		
 		String fileName = "src\\test\\resources\\testdata\\login.xlsx";

@@ -8,6 +8,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadFromExcelReg {
 	static XSSFWorkbook workBook;
+	
+	//Function for getting data from Registration.xlsx file 
 	public static String[][] getData() {
 		
 		String fileName = "src\\test\\resources\\testdata\\Registration.xlsx";

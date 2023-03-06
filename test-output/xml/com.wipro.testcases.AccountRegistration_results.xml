@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="9.439">
+           time="9.029">
   <properties />
   
   
-            <testcase name="RegistrationTest" time="9.439" classname="com.wipro.testcases.AccountRegistration" />
+            <testcase name="RegistrationTest" time="9.029" classname="com.wipro.testcases.AccountRegistration" />
       
 </testsuite>

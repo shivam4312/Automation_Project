@@ -13,6 +13,7 @@ public class LoginPage extends TestBase {
 	By password = By.id("Password");
 	By loginButton = By.xpath("//button[text()='Log in']");
 	
+	// Code For Validating Login Functionality
 	public boolean validateLogin(String uname,String pwd) {
 		driver.findElement(logIn).click();
 		wait(1000);
@@ -22,6 +23,7 @@ public class LoginPage extends TestBase {
 		wait(1000);
 		driver.findElement(loginButton).click();
 		
+		// Creating object of webdriverwait
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		boolean actResult = true;
 		

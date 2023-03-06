@@ -7,7 +7,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.wipro.base.TestBase;
 
+
 public class AddressPage extends TestBase{
+	
+	// Storing web elements by using locators
 	
 	By addNew = By.xpath("/html/body/div[6]/div[3]/div/div[2]/div/div[2]/div[2]/button");
 	By firstName = By.xpath("//*[@id=\"Address_FirstName\"]");
@@ -21,6 +24,7 @@ public class AddressPage extends TestBase{
 	By phoneNumber = By.xpath("//*[@id=\"Address_PhoneNumber\"]");
 	By saveBtn = By.xpath("/html/body/div[6]/div[3]/div/div[2]/form/div/div[2]/div[2]/button");
 	
+	// Function for checking and passing data in web elements
 	public boolean addAddress(String firstname,String lastname,String Email,String cityname,String addressCity,String postalCode,String pNumber) {
 		
 		driver.findElement(addNew).click();

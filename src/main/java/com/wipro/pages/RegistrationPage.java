@@ -17,6 +17,7 @@ public class RegistrationPage extends TestBase {
 	By confirmPassword = By.id("ConfirmPassword");
 	By registrationButton = By.xpath("//*[@id=\"register-button\"]");
 	
+	//funtion for creating Account
 	public boolean createAccount(String fname,String lname,String email,String pwd, String confPwd) {
 		driver.findElement(resgister).click();
 		wait(1000);
@@ -41,6 +42,8 @@ public class RegistrationPage extends TestBase {
 		driver.findElement(registrationButton).click();
 		
 		WebDriverWait wait = new WebDriverWait(driver,10);
+		
+//		Check Whether registered Successfully or not
 		boolean actResult = true;
 		
 		try {	

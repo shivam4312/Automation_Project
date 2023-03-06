@@ -64,7 +64,7 @@ public class TestBase {
 		}
 	}
 	
-	// Function for taking screenshots
+	// Function for taking screenshots of error when testcase fails
 	public String captureScreenshot(String scrName) {
 		System.out.println("Screenshot for "+scrName);
 		Date date = new Date();

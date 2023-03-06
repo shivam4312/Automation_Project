@@ -16,6 +16,7 @@ public class ListenerFile extends TestBase implements ITestListener {
 	ExtentReports extent;
 	ExtentTest test;
 
+	// Function for starting Listener
 	public void onStart(ITestContext context) {
 		System.out.println("Test is started");
 		htmlReporter = new ExtentHtmlReporter("ExtentReport.html");
@@ -23,21 +24,25 @@ public class ListenerFile extends TestBase implements ITestListener {
 		extent.attachReporter(htmlReporter);
 	}
 
+	// Function for finish test
 	public void onFinish(ITestContext context) {
 		System.out.println("Test is completed");
 		extent.flush();
 	}
 
+	//Function for Test result
 	public void onTestStart(ITestResult result) {
 		System.out.println("Execution started for Test Method: " + result.getName());
 	}
 
+	// Function for test success
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("Test is Successful for Test Method: " + result.getName());
 		test = extent.createTest(result.getName());
 		test.pass(result.getName() + " is Passed");
 	}
 
+	// Function for Test Failure
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test is Failure for Test Method: " + result.getName());
 	String fileName = captureScreenshot(result.getName());
@@ -51,6 +56,7 @@ public class ListenerFile extends TestBase implements ITestListener {
 		}
 	}
 
+	// Function for Skipped Test
 	public void onTestSkipped(ITestResult result) {
 		System.out.println("Test is Skipped for Test Method: " + result.getName());
 		test = extent.createTest(result.getName());
