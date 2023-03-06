@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="59.986">
+  <properties />
+  
+  
+            <testcase name="loginTest" time="5.996" classname="com.wipro.testcases.PlaceOrder" />
+                <testcase name="clickConfirmTest" time="1.784" classname="com.wipro.testcases.PlaceOrder" />
+                <testcase name="addToCartTest" time="20.102" classname="com.wipro.testcases.PlaceOrder" />
+                <testcase name="selectDesktopTest" time="6.974" classname="com.wipro.testcases.PlaceOrder" />
+                <testcase name="clickCheckoutTest" time="9.258" classname="com.wipro.testcases.PlaceOrder" />
+                <testcase name="makePaymentTest" time="6.181" classname="com.wipro.testcases.PlaceOrder" />
+                <testcase name="clickShoppingCartTest" time="3.180" classname="com.wipro.testcases.PlaceOrder" />
+                <testcase name="valiadteLogout" time="6.511" classname="com.wipro.testcases.PlaceOrder" />
+      
+</testsuite>
